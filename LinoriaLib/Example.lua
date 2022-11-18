@@ -93,8 +93,10 @@ MyButton2:AddTooltip('This is a sub button')
 
 -- Groupbox:AddLabel
 -- Arguments: Text, DoesWrap
-LeftGroupBox:AddLabel('This is a label')
+local coolLabel = LeftGroupBox:AddLabel('This is a label')
 LeftGroupBox:AddLabel('This is a label\n\nwhich wraps its text!', true)
+
+coolLabel:SetText('This is a edited label')
 
 -- Groupbox:AddDivider
 -- Arguments: None
